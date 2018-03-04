@@ -1,0 +1,86 @@
+body{
+	background-color: skyblue;
+}
+
+h1{
+	text-align: center;
+}
+
+img{
+	cursor: pointer;
+}
+
+.contenedor{
+	margin: 0 auto;
+	width: 600px;
+	font-family: sans-serif;
+	margin-bottom: 100px;
+}
+
+.caja{
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	cursor: pointer;
+}
+
+.transicion{
+	-webkit-transition: .3s;
+	transition: .3s;
+	/* transition: .3s opacity ease; */
+	/* duracion transition-duration: .3s;
+	aceleracion transition-timing-function: opacity;
+	property transition-property: ease; */
+}
+
+.opacidad{
+	opacity: 0;
+}
+
+.opacidad:hover{
+	opacity: 1;
+}
+
+.fuente:hover{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.colores:hover{
+	color: white;
+	background-color: blue;
+}
+
+/* Las rotaciones se miden en grados cabe destacar que se pueden realizar tralaciones 3d, es decir, se definen los 3 ejes x y z*/
+
+.rotacion:hover{
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+/* Las escalas se miden de 0 a 1 cabe destacar que se pueden realizar tralaciones 3d, es decir, se definen los 3 ejes x y z*/
+
+.escala:hover{
+	-webkit-transform: scale(2);
+	        transform: scale(2);
+}
+
+	/* Es una media rotacion del elemento y se mide en grados */
+
+.sesgado:hover{
+	-webkit-transform: skew(45deg);
+	        transform: skew(45deg);
+}
+
+	/* Las traslacion se miden en pixeles, cabe destacar que se pueden realizar tralaciones 3d, es decir, se definen los 3 ejes x y z*/
+	/* transform: translate3d(50px, 20px, 50px); */
+
+.traslacion:hover{
+	-webkit-transform: translateX(50px);
+	        transform: translateX(50px);
+}
+
+.mixtas:hover{
+	-webkit-transform: rotate(45deg) scale(2) skew(45deg) translateX(50px);
+	        transform: rotate(45deg) scale(2) skew(45deg) translateX(50px);
+}
